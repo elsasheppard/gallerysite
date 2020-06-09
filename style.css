@@ -1,0 +1,227 @@
+/* I wrote this myself */
+
+#container {
+  font-family: 'Raleway', sans-serif;
+  width: 1700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#header {
+  font-size: 30px;
+	width: 1700px;
+	margin-left: auto;
+	margin-right: auto;
+  text-align: center;
+}
+
+#middle {
+  font-size: 15px;
+  width: 1700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/* This was sourced from Stack Overflow and adapted to fit the program */
+
+#imagesBox {
+  text-align: center;
+  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 3s; /* Firefox < 16 */
+  -ms-animation: fadein 3s; /* Internet Explorer */
+  animation: fadein 3s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* I wrote this myself */
+
+#images0a {
+  float: left;
+  margin-left: 200px;
+}
+
+#images1a {
+  float: left;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+#images1b {
+  margin-right: 200px;
+}
+
+#desc1a {
+  float: left;
+  margin-left: 200px;
+}
+
+#desc0b{
+  margin-right: 598px;
+  text-align: right;
+}
+
+#desc1b{
+  margin-right: 290px;
+  text-align: right;
+}
+
+#desc2b{
+  margin-right: 375px;
+  text-align: right;
+}
+
+#row3 {
+  margin-bottom: 50px;
+}
+
+#model {
+  margin-right: 200px;
+}
+
+/* This was sourced from various sites and edited to fit the program */
+
+footer {
+  background: #ffffff;
+  width: 1600px;
+  height: 20px;
+  margin-left: 120px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.copyright p {
+	margin: 0;
+	color: #444444;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: black;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 800px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

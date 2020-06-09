@@ -1,0 +1,177 @@
+<!--Most of this HTML I wrote myself-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Elsa's Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id='container'>
+    <div id='main'>
+      <div id='header'>
+        <h1>Elsa's Portfolio</h1>
+      </div>
+
+      <div id='middle'>
+        <h2>A collection of personal projects</h2>
+      </div>
+    </div>
+
+    <div id='imagesBox'>
+      <div id='row'>
+        <div id='images0a'>
+          <img src='Music-To-Fall-Asleep-To.png' width=500 onclick="openModal();currentSlide(1)" class="hover-shadow">
+        </div>
+      </div>
+
+      <div class="model">
+        <iframe title="A 3D model" width="500" height="500"
+          src="https://sketchfab.com/models/baf2c032061e4ee197d10f0f62137f34/embed?preload=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1"
+          frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true"
+          webkitallowfullscreen="true"></iframe>
+      </div>
+
+      <div id='desc1a'>
+        <p>"Music to Fall Asleep To," album cover commission</p>
+      </div>
+
+      <div id='desc0b'>
+        <p>Modeled in Sculptris</p>
+      </div>
+    
+
+      <div id='row'>
+        <div id='images1a'>
+          <img src='ArtoriaPosterFinal.png' width=500 onclick="openModal();currentSlide(2)"
+            class="hover-shadow">
+        </div>
+      </div>
+
+      <div id='images1b' ;>
+        <img src='HandsOff6.jpg' width=500 onclick="openModal();currentSlide(3)" class="hover-shadow">
+      </div>
+
+      <div id='desc1a'>
+        <p>"The Once and Future King"</p>
+      </div>
+
+      <div id='desc1b'>
+        <p>"Hands Off," showcased in SPHS's PTSA Reflections Art Contest</p>
+      </div>
+    
+
+      <div id='row3'>
+        <div id='images1a'>
+          <img src='BobACNH.jpg' width=500 onclick="openModal();currentSlide(4)" class="hover-shadow">
+        </div>
+
+        <div id='images1b' ;>
+          <img src='FangACNH.jpg' width=500 onclick="openModal();currentSlide(5)" class="hover-shadow">
+        </div>
+
+        <div id='desc1a'>
+          <p>Fanart of Bob from Animal Crossing New Horizons</p>
+        </div>
+
+        <div id='desc2b'>
+          <p>Fanart of Fang from Animal Crossing New Horizons</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--This section of HTML was sourced from Stack Overflow and edited to fit the program-->
+
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+      <div class="mySlides">
+        <img src="Music-To-Fall-Asleep-To.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="ArtoriaPosterFinal.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="HandsOff6.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="BobACNH.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="FangACNH.jpg" style="width:100%">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+    </div>
+  </div>
+
+<!--All of the JavaScript was sourced from W3Schools and edited to fit the program-->
+
+  <script>
+// Open the Modal
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+<!--I wrote this myself-->
+
+  </div>
+  <footer>
+    <div class="copyright">
+      <p>Copyright &copy 2020 Elsa Sheppard</p>
+    </div>
+  </footer>
+
+</body>
+</html>
